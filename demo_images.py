@@ -59,6 +59,7 @@ if __name__ == '__main__':
     parser.add_argument('--input-images', type=str, help='path to the input images')
     parser.add_argument('--output-format', type=str, default='video', help='expected output format, can be video, or text')
     parser.add_argument('--output-root', type=str, default='results', help='expected output root path')
+    parser.add_argument('--save-var',type=str, default='vars', help='save pickle variable')
     opt = parser.parse_args()
     print(opt, end='\n\n')
 
