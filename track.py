@@ -76,7 +76,7 @@ def eval_seq(opt, dataloader, data_type, result_filename, save_dir=None, show_im
     # save results
     if opt.save_var:
         import pickle
-        filename = opt.save_var + '/MOT_result.pickle'
+        filename = os.path.join(opt.save_var, '/MOT_result.pickle')
         with open(filename, 'wb') as f:
             pickle.dump(results, f)
     write_results(result_filename, results, data_type)
